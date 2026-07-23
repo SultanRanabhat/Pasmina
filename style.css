@@ -1,0 +1,282 @@
+body{
+    margin: 0;
+}
+
+
+/*---------------
+Heading fonts
+-----------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: "Cormorant", serif;
+}
+
+
+
+
+/*---------------
+Header section 
+-----------------*/
+header{
+    background-color: #0B0B0B;
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 100px;
+    width: auto;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+.headerflex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 13px;
+    margin: 0;
+}
+.headerlogo img{
+    height: 60px;
+    width: 150px;
+}
+.navbar li{
+    margin-right: 20px;
+    
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Manrope", sans-serif;
+}
+.navbar li a:hover{
+    color: #D4AF37;
+}
+.spandiv{
+    align-items: center;
+
+}
+.spandiv img{
+    margin-left: 20px;
+    height: 20px;
+    width: 20px;
+}
+
+/*---------------
+Hero section 
+-----------------*/
+.herosection{
+    height: 800px;
+    width: auto;
+    background-image: linear-gradient(to right,
+            rgba(11,11,11,.95) 0%,
+            rgba(11,11,11,.85) 35%,
+            rgba(11,11,11,.4) 70%,
+            rgba(11,11,11,0) 100%
+        ), url(./assets/herosection.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero{
+    color: white;
+    padding-left: 50px;
+    padding-top: 150px;
+    margin: 0;
+}
+.hero h4{
+    font-size: 20px;
+    margin: 0;
+}
+.hero h1{
+    font-size: 60px;
+    margin: 0;
+}
+.hero p{
+    font-family: "Manrope", sans-serif;
+}
+.hero button{
+    height: 40px;
+    width: 150px;
+    border-radius: 30px;
+    background-color: #D4AF37;
+    border-color: #D4AF37;
+    font-family: "Manrope", sans-serif;
+    transition: all .35s ease;
+    margin-right: 20px;
+}
+.hero .newarrival{
+    background: white;
+    border-color:#D4AF37;
+} 
+.hero button:hover{
+    transform: translateY(-2px) scale(1.04);
+    background-color: #dbbf64;
+}
+
+/*---------------
+Browse section and new arrival section
+-----------------*/
+.browse{
+    text-align: center;
+    margin-top: 50px;
+}
+.browse span{
+    font-size: 20px;
+    color: #D4AF37;
+}
+.browse h4{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.browse p{
+    margin-top: 5px;
+}
+.browse button img{
+    width: 30px;
+    height: 70px;
+}
+.browse button{
+    width: 180px;
+    height: 100px;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 20px;
+    transition: all .35s ease;
+    border: 1px solid black;
+}
+.browse button:hover{
+    background-color: #dbbf64;
+    transform: translateY(-10px) scale(1.04);
+    box-shadow:
+    0 8px 15px rgba(0, 0, 0, 0.25),
+    0 20px 40px rgba(0, 0, 0, 0.45);
+}
+
+/*---------
+Card section 
+-----------*/
+.cardflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px; 
+}
+.card{
+    position: relative;
+    box-shadow:
+    0 8px 15px rgba(0, 0, 0, 0.25),
+    0 20px 40px rgba(0, 0, 0, 0.45);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-radius: 10px;
+    border: 2px solid #D4AF37 ;
+    transition: all .35s ease;
+}
+.card:hover{
+    background-color: #dbbf64;
+    transform: translateY(-10px) scale(1.04);
+}
+.card .dis,.eye,.fev{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px; 
+    border: 1px solid #D4AF37 ;
+}
+.card .dis{
+    top: 15px;
+    left: 15px;
+    background-color: #D4AF37;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    color: white;
+}
+.card .eye:hover{
+    background-color: #dbbf64;
+}
+.card .eye,.fev{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card .fev{
+    color: black;
+    top: 15px;
+    right: 15px;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+}
+.card .fev:hover{
+    color: red;
+}
+.card .eye{
+    color: black;
+    top: 15px;
+    right: 60px;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+}
+.card img{
+    height: 400px;
+    width: 300px;
+}
+.card hr{
+    background-color: #0B0B0B;
+    height: 1px;
+    width: 70px;
+    position: absolute;
+    left: 130px;
+}
+.card .addtocart img{
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+}
+
+.card .addtocart{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: #F5F1E8;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 40px;
+}
+
+
+
