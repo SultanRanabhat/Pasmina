@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    /* background-color: #BFC5CA; */
+    background-color: #dfdbd2;
 }
 
 
@@ -71,6 +71,9 @@ header{
     color: white;
     font-family: "Manrope", sans-serif;
 }
+.navbar .home{
+    color: #D4AF37;
+}
 .navbar li a:hover{
     color: #D4AF37;
 }
@@ -121,7 +124,8 @@ Hero section
 .hero button{
     height: 40px;
     width: 150px;
-    border-radius: 30px;
+    border-radius: 10px;
+    border: 1px solid #D4AF37;
     background-color: #D4AF37;
     border-color: #D4AF37;
     font-family: "Manrope", sans-serif;
@@ -168,12 +172,13 @@ Browse section and new arrival section
     width: 180px;
     height: 100px;
     margin-right: 20px;
-    background-color: white;
+    background-color: #dfdbd2;
     border-radius: 20px;
     transition: all .35s ease;
     border: 1px solid black;
 }
 .browse button:hover{
+    cursor: pointer;
     background-color: #dbbf64;
     transform: translateY(-10px) scale(1.04);
     box-shadow:
@@ -203,7 +208,8 @@ Card section
     padding-right: 50px; 
 }
 .card{
-    background-color: white;
+    cursor: pointer;
+    /* background-color: white; */
     position: relative;
     box-shadow:
     0 8px 15px rgba(0, 0, 0, 0.25),
@@ -328,11 +334,13 @@ choose flex card section
     padding-top: 20px;
 }
 .chooseflex .card{
+    background-color: white;
     height: 150px;
     width: 300px;
     box-shadow: none;
 }
 .chooseflex .card:hover{
+    cursor: default;
     background-color: #BFC5CA;
     transform: none;
 }
@@ -346,17 +354,82 @@ choose flex card section
     
 }
 
+/*---------
+Voices section 
+-----------*/
+#voices .card{
+    background-color: white;
+    height: 150px;
+    width: 400px;
+    box-shadow: none;
+}
+#voices .card:hover{
+    cursor: default;
+}
+#voices .card .cotation{
+    position: absolute;
+    margin-left: 250px;
+    right: 15px;
+    top: 0px;
+    font-size: 70px;
 
+}
+#voices .card p{
+    margin: 0;
+}
 
+/*---------
+subscribe card section 
+-----------*/
 
-
-
-
-
-
-
-
-
+.subscribecard{
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 490px;
+    margin-right: 50px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border: 2px solid #D4AF37;
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    
+}
+.subscribecard .mailicon{
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    margin-left: 220px;
+    border: 1px solid #D4AF37;
+    border-color: #D4AF37;
+    border-radius: 30px;
+}
+.subscribecard input{
+    height: 30px;
+    width: 300px;
+}
+.subscribecard button{
+    height: 35px;
+    width: 120px;
+    background-color: #D4AF37;
+    border: 1px solid #D4AF37;
+    border-color: #D4AF37;
+    color: white;
+    transition: all .35s ease;
+}
+.subscribecard button:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow:    
+    0 8px 15px rgba(0, 0, 0, 0.25),
+    0 20px 40px rgba(0, 0, 0, 0.45);
+}
+.subscribecard .nospamtext{
+    font-size: 12px;
+    color: #BFC5CA;
+}
 
 
 
@@ -364,6 +437,7 @@ choose flex card section
 /*---------
 Footer section 
 -----------*/
+
 .footerdiv {
     margin-top: 50px;
     display: flex;
@@ -372,9 +446,9 @@ Footer section
     color: white;
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: black;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #0B0B0B;
     
 }
 .footerdiv img{
@@ -382,51 +456,48 @@ Footer section
     width: 150px;
 }
 .footerdiv p{
-    color: grey;
+    color: #BFC5CA;
 }
 .footerdiv span button{
     margin-top: 50px;
     height: 40px;
     width: 40px;
     border-radius: 20px;
-    border-color: white;
+    border: 1px solid #D4AF37;
+    border-color: #D4AF37;
 }
 .footerdiv span button a{
     text-decoration: none;
-    color: orange;
+    color: #D4AF37;
 }
 .footerdiv ul{
     list-style: none;
     padding: 0;
 }
 .footerdiv li{
-    margin-bottom: 10px;
-   
+    margin-bottom: 15px;
+    transition: all .35s ease;
+}
+.footerdiv li:hover{
+    transform: translateX(3px);
 }
 .footerdiv ul li a{
     text-decoration: none;
-    color: grey;
+    color: #BFC5CA;
 }
-.footerinputdiv{
+.footershopdiv {
     display: flex;
     flex-direction: row;
-    position: relative;
+    justify-content: space-between;
+    background-color: #BFC5CA;
 }
-.footerinputdiv input{
-    height: 20px;
-    width: 220px;
+.footercontactus ul li{
+    color: #BFC5CA;
 }
-.footerinputdiv .footerinputbutton{
-    position: absolute;
-    right: 0px;
+.footercontactus ul li:hover{
+    transform: translateX(3px);
 }
-.footerinputbutton button{
-    width: 90px;
-    height: 26px;
-    color: white;
-    background-color: orange;
-    border-color: orange;
-}
+
 
 
 .copyright{
