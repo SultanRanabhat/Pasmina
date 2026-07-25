@@ -508,4 +508,17 @@ Footer section
 }
 
 
+/*---------
+under construction page section 
+-----------*/
+.underconstruction{
+    text-align: center;
+}
+.underconstruction img{
+
+    height: 300px;
+    width: 500px;
+}
+
+
 
