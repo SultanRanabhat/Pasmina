@@ -34,6 +34,9 @@ Header section
 .mobilelogo{
     display: none;
 }
+.nav{
+    display: none;
+}
 .hamburger{
     display:none;
     font-size:30px;
@@ -42,6 +45,9 @@ Header section
 }
 #menu{
     display:none;
+}
+.mobilenavbar{
+    display: none;
 }
 header{
     background-color: #0B0B0B;
@@ -159,6 +165,9 @@ Browse section and new arrival section
 .browse{
     text-align: center;
     margin-top: 80px;
+}
+.browse a{
+   display: inline-flex;
 }
 .browse span{
     font-size: 25px;
@@ -393,8 +402,8 @@ subscribe card section
 .subscribecard{
     text-align: center;
     margin-top: 100px;
-    margin-left: 490px;
-    margin-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -531,13 +540,13 @@ under construction page section
 
 
 /*---------
-For Mobile section 
+For Mobile 
 -----------*/
 @media (max-width:480px){
     
-   * {
+   /* * {
     outline: 1px solid red;
-}
+} */
 
     .desktoplogo{
         display: none;
@@ -583,9 +592,9 @@ For Mobile section
         color: #BFC5CA;
     }
     .headerflex{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
     }
     header{
         position: sticky;
@@ -629,7 +638,6 @@ For Mobile section
         font-size: 12px;
     }
     .herosection{
-        width: 430px;
         background-position: 70% center;
         height: 865px;
     }
@@ -640,17 +648,19 @@ For Mobile section
         margin-left: 20px;
     }
     .browse button{
-        margin-left: 20px;
+        margin-right: auto;
+        margin-left: auto;
         width: 150px;
     }
 
     .cardflex{
-        padding-left: 20px;
-        padding-right: 20px;
+        margin: 0;
+        padding: 0;
+        align-items: center;
         flex-direction: column;
     }
     .card{
-        margin-left: 20px;
+        margin-left: 0px;
         width: 300px;
         padding-left: 5px;
         padding-right: 5px;
@@ -667,6 +677,10 @@ For Mobile section
         font-size: 30px;
     }
     .chooseflex{
+        padding-right: 0;
+        padding-left: 0;
+        
+        align-items: center;
         flex-direction: column;
     }
     #choose .card{
@@ -676,7 +690,9 @@ For Mobile section
 
 
     #voices .card{
-        width: 377px;
+        padding: 0;
+        margin: 0;
+        width: 350px;
     }
     #voices{
         padding-left: 0;
@@ -684,8 +700,198 @@ For Mobile section
 
 
     .subscribecard{
-        margin-right: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 350px;
+    }
+    .subscribecard .mailicon{
+        margin-left: 150px;
+    }
+    .subscribecard input{
+        width: 200px;
+    }
+
+
+    .footerdiv{
+    flex-direction: column;
+    }
+    .footerdiv .footeropeningtime{
+        margin-bottom:20px;
+        margin-top: 20px;
+    }
+    .footerdiv .footercontactus{
+        margin-top: 20px;
+    }
+    .footerdiv{
+        padding-bottom: 20px;
+    }
+
+}
+
+
+/*---------
+For Bigger Screen
+-----------*/
+@media (max-width:1024px){
+    
+   /* * {
+    outline: 1px solid red;
+} */
+
+    .desktoplogo{
+        display: none;
+    }
+    .mobilelogo{
+        display: block;
+    }
+    .hamburger{
+        display: block;
+    }
+    .navbar{
+        display: none;
+    }
+
+
+    .mobilenavbar{
+        display: block;
+        margin-left: 40px;
+    }
+    #menu:checked ~ .nav{
+        display:block;
+    }
+    .nav{
+        display: none;
+        position: absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#090909;
+    }
+    .nav ul{
+        list-style: none;
+        display:flex;
+        flex-direction:column;
+        padding:20px;
+    }
+    .nav li{
+        text-align: center;
+        margin:15px 0;
+    }
+    .nav li a{
+        text-decoration: none;
+        color: #BFC5CA;
+    }
+    .headerflex{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+    header{
+        position: sticky;
+        top: 0px;
+        z-index: 1000;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 70px;
+    }
+    .headerlogo img{
+        height: 40px;
+        width: 40px;
+    }
+    .navbar ul li{
+        font-size: 2px;
+        margin-right: 12px;
+    }
+    .spandiv img{
+        margin-left: 10px;
+        height: 15px;
+        width: 15px;
+    }
+
+
+    .hero{
         margin-left: 20px;
+        margin-right: 20px;
+        padding-right: 0;
+        padding-left: 0px;
+    }
+    
+    .hero h4{
+        padding-right: 0;
+        font-size: 15px;
+        margin-top: 70px;
+    }
+    .hero h1{
+        font-size: 40px;
+    }
+    .hero p{
+        font-size: 12px;
+    }
+    .herosection{
+        background-position: 70% center;
+        height: 865px;
+    }
+
+    .browse{
+        margin-right: 20px;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    .browse button{
+        margin-right: auto;
+        margin-left: auto;
+        width: 150px;
+    }
+
+    .cardflex{
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card{
+        margin-left: 0px;
+        width: 300px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 10px;
+        box-shadow: none;
+    }
+    
+    #choose{
+        margin-left: 20px;
+        margin-right: 20px;
+        
+    }
+    #choose h4{
+        font-size: 30px;
+    }
+    .chooseflex{
+        padding-right: 0;
+        padding-left: 0;
+        
+        align-items: center;
+        flex-direction: column;
+    }
+    #choose .card{
+        width: 277px;
+        margin-left: 0;
+    }
+
+
+    #voices .card{
+        padding: 0;
+        margin: 0;
+        width: 350px;
+    }
+    #voices{
+        padding-left: 0;
+    }
+
+
+    .subscribecard{
+        margin-right: auto;
+        margin-left: auto;
         width: 350px;
     }
     .subscribecard .mailicon{
