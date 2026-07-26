@@ -668,11 +668,6 @@ For Mobile
         box-shadow: none;
     }
     
-    #choose{
-        margin-left: 20px;
-        margin-right: 20px;
-        
-    }
     #choose h4{
         font-size: 30px;
     }
@@ -690,8 +685,6 @@ For Mobile
 
 
     #voices .card{
-        padding: 0;
-        margin: 0;
         width: 350px;
     }
     #voices{
@@ -858,11 +851,7 @@ For Bigger Screen
         box-shadow: none;
     }
     
-    #choose{
-        margin-left: 20px;
-        margin-right: 20px;
-        
-    }
+   
     #choose h4{
         font-size: 30px;
     }
@@ -880,8 +869,6 @@ For Bigger Screen
 
 
     #voices .card{
-        padding: 0;
-        margin: 0;
         width: 350px;
     }
     #voices{
