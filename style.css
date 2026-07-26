@@ -31,6 +31,18 @@ Viev More section
 /*---------------
 Header section 
 -----------------*/
+.mobilelogo{
+    display: none;
+}
+.hamburger{
+    display:none;
+    font-size:30px;
+    color:white;
+    cursor:pointer;
+}
+#menu{
+    display:none;
+}
 header{
     background-color: #0B0B0B;
     margin: 0;
@@ -76,10 +88,6 @@ header{
 }
 .navbar li a:hover{
     color: #D4AF37;
-}
-.spandiv{
-    align-items: center;
-
 }
 .spandiv img{
     margin-left: 20px;
@@ -522,3 +530,184 @@ under construction page section
 
 
 
+/*---------
+For Mobile section 
+-----------*/
+@media (max-width:480px){
+    
+   * {
+    outline: 1px solid red;
+}
+
+    .desktoplogo{
+        display: none;
+    }
+    .mobilelogo{
+        display: block;
+    }
+    .hamburger{
+        display: block;
+    }
+    .navbar{
+        display: none;
+    }
+
+
+    .mobilenavbar{
+        display: block;
+        margin-left: 40px;
+    }
+    #menu:checked ~ .nav{
+        display:block;
+    }
+    .nav{
+        display: none;
+        position: absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#090909;
+    }
+    .nav ul{
+        list-style: none;
+        display:flex;
+        flex-direction:column;
+        padding:20px;
+    }
+    .nav li{
+        text-align: center;
+        margin:15px 0;
+    }
+    .nav li a{
+        text-decoration: none;
+        color: #BFC5CA;
+    }
+    .headerflex{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    }
+    header{
+        position: sticky;
+        top: 0px;
+        z-index: 1000;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 70px;
+    }
+    .headerlogo img{
+        height: 40px;
+        width: 40px;
+    }
+    .navbar ul li{
+        font-size: 2px;
+        margin-right: 12px;
+    }
+    .spandiv img{
+        margin-left: 10px;
+        height: 15px;
+        width: 15px;
+    }
+
+
+    .hero{
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-right: 0;
+        padding-left: 0px;
+    }
+    
+    .hero h4{
+        padding-right: 0;
+        font-size: 15px;
+        margin-top: 70px;
+    }
+    .hero h1{
+        font-size: 40px;
+    }
+    .hero p{
+        font-size: 12px;
+    }
+    .herosection{
+        width: 430px;
+        background-position: 70% center;
+        height: 865px;
+    }
+
+    .browse{
+        margin-right: 20px;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    .browse button{
+        margin-left: 20px;
+        width: 150px;
+    }
+
+    .cardflex{
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+    }
+    .card{
+        margin-left: 20px;
+        width: 300px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 10px;
+        box-shadow: none;
+    }
+    
+    #choose{
+        margin-left: 20px;
+        margin-right: 20px;
+        
+    }
+    #choose h4{
+        font-size: 30px;
+    }
+    .chooseflex{
+        flex-direction: column;
+    }
+    #choose .card{
+        width: 277px;
+        margin-left: 0;
+    }
+
+
+    #voices .card{
+        width: 377px;
+    }
+    #voices{
+        padding-left: 0;
+    }
+
+
+    .subscribecard{
+        margin-right: 20px;
+        margin-left: 20px;
+        width: 350px;
+    }
+    .subscribecard .mailicon{
+        margin-left: 150px;
+    }
+    .subscribecard input{
+        width: 200px;
+    }
+
+
+    .footerdiv{
+    flex-direction: column;
+    }
+    .footerdiv .footeropeningtime{
+        margin-bottom:20px;
+        margin-top: 20px;
+    }
+    .footerdiv .footercontactus{
+        margin-top: 20px;
+    }
+    .footerdiv{
+        padding-bottom: 20px;
+    }
+
+}

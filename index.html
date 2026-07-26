@@ -11,9 +11,11 @@
     <header>
         <div class="headerflex">
             <div class="headerlogo">
-                <a href="./index.html"><img src="./assets/headerLogo3.png" alt="Header Logo"/></a>
+                <a href="./index.html"><img class="desktoplogo" src="./assets/headerLogo3.png" alt="Header Logo"/></a>
+                <a href="./index.html"><img class="mobilelogo" src="./assets/mobileheaderlogo.png" alt="Header Logo"/></a>
             </div>
             <div class="navbar">
+                
                 <ul>
                     <li><a class="home" href="./index.html">Home</a></li>
                     <li><a href="./pages/ourCollections.html">Our Collections</a></li>
@@ -21,6 +23,25 @@
                     <li><a href="./pages/contactUs.html">Contact Us</a></li>
                 </ul>
             </div>
+                
+                
+            <!-- Hamburger menu -->
+            <div class="mobilenavbar">
+                <input type="checkbox" id="menu">
+                <label for="menu" class="hamburger">
+                    ☰
+                </label>
+                <nav class="nav">
+                <ul>
+                    <li><a class="home" href="./index.html">Home</a></li>
+                    <li><a href="./pages/ourCollections.html">Our Collections</a></li>
+                    <li><a href="./pages/aboutUs.html">About Us</a></li>
+                    <li><a href="./pages/contactUs.html">Contact Us</a></li>
+                </ul>
+                </nav>
+            </div>
+
+
             <div class="spandiv">
                 <span><a href="./pages/favourites.html"><img src="./assets/heart.png"></a></span>
                 <span><a href="./pages/cart.html"><img src="./assets/shopping-cart.png"></a></span>
@@ -262,7 +283,7 @@
                 <div class="mailicon">✉︎</div>
                 <h1>Stay in the Loop</h1>
                 <p>Subscribe for exclusive previews, new arrivals, and Pahiran style notes delivered straight to your inbox.</p><br/>
-                <input placeholder="Enter your email address"/>
+                <input placeholder="Enter your email address" type="email"/>
                 <a href="#"><button>Subscribe ➜</button></a>
                 <p class="nospamtext">No spam, ever. Unsubscribe anytime.</p>
             </div>
@@ -279,7 +300,7 @@
 
     <footer>
                 <div class="footerdiv">
-                    <div>
+                    <div class="footeropeningtime">
                         <img src="./assets/footerlogo.png"/>
                         <p>Premium Nepali clothing crafted for comfort,<br/> culture, and modern style.</p>
                         <div>
@@ -291,7 +312,7 @@
                     </div>
 
                     
-                    <div>
+                    <div class="footeropeningtime">
                         <b>Shop</b>
                         <ul>
                             <li><a href="./pages/ourCollections.html">Women</a></li>
@@ -300,7 +321,7 @@
                         </ul>
                     </div>
 
-                    <div>
+                    <div class="footeropeningtime">
                         <b>User Links</b>
                         <ul>
                             <li><a href="./pages/aboutUs.html">About Us</a></li>
@@ -311,7 +332,7 @@
                         </ul>
                     </div>
 
-                    <div>
+                    <div class="footeropeningtime">
                         <b>Customer Care</b>
                         <ul>
                             <li><a href="#">Help Center</a></li>
