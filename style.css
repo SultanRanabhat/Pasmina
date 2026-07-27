@@ -1045,4 +1045,13 @@ For Bigger Screen
 
 
 
+/* underconstruction pages */
+
+.underconstruction img{
+    height: 200px;
+    width: 350px;
+}
+
+
+
 }
