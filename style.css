@@ -977,6 +977,12 @@ For Bigger Screen
 
 /* Collection page starts here */
 
+.collectionwomen h4{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 35px;
+}
+
 .collectionflex .card img{
     height: 200px ;
     width: 150px ;
@@ -990,7 +996,7 @@ For Bigger Screen
 .collectionflex{
     display: grid;
     grid-template-columns: repeat(2 , 1fr);
-    gap: 25px;
+    gap: 20px;
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px; 
