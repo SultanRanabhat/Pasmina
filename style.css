@@ -168,6 +168,7 @@ Browse section and new arrival section
 }
 .browse a{
    display: inline-flex;
+   text-decoration: none;
 }
 .browse span{
     font-size: 25px;
