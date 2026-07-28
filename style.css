@@ -997,6 +997,7 @@ For Bigger Screen
     display: grid;
     grid-template-columns: repeat(2 , 1fr);
     gap: 20px;
+    justify-items: center;
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px; 
